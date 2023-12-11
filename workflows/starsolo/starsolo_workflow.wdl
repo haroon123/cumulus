@@ -8,8 +8,8 @@ workflow starsolo_workflow {
         File input_csv_file
         # URL of output directory
         String output_directory
-        String read1_fastq_pattern = "_S*_L*_R1_001.fastq.gz"
-        String read2_fastq_pattern = "_S*_L*_R2_001.fastq.gz"
+        String read1_fastq_pattern = "_1.fastq.gz"
+        String read2_fastq_pattern = "_2.fastq.gz"
         # Which read contains cell barcodes and UMIs. Either "read1" or "read2"
         String barcode_read = "read1"
         # Type of SAM/BAM output
